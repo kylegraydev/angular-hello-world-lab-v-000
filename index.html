@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="app">
 <head>
     <meta charset="utf-8">
 
@@ -8,6 +8,16 @@
 </head>
 <body>
 
+    <div ng-app='app'>
+      <p ng-controller='MainController'>
+        <ul>
+          <li>{{name}}</li>
+          <li>{{email}}</li>
+          <li>{{phone}}</li>
+        </ul>
+      </p>
+    </div>
+    
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
